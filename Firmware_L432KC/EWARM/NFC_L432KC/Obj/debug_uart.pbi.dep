@@ -1,0 +1,3 @@
+debug_uart.pbi: \
+  E:\Firmware\CodeTestL432KC\ReaderL432KC\Firmware_L432KC\DucaLib\src\debug_uart.c \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdio.h
