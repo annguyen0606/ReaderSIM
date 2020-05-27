@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\Firmware\CodeTestL432KC\ReaderL432KC\Firmware_L432KC\EWARM\settings\NFC_L432KC.NFC_L432KC.general.xcl" --backend -f "E:\Firmware\CodeTestL432KC\ReaderL432KC\Firmware_L432KC\EWARM\settings\NFC_L432KC.NFC_L432KC.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\Firmware\CodeTestL432KC\ReaderSIM\Firmware_L432KC\EWARM\settings\NFC_L432KC.NFC_L432KC.general.xcl" --backend -f "E:\Firmware\CodeTestL432KC\ReaderSIM\Firmware_L432KC\EWARM\settings\NFC_L432KC.NFC_L432KC.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\Firmware\CodeTestL432KC\ReaderL432KC\Firmware_L432KC\EWARM\settings\NFC_L432KC.NFC_L432KC.general.xcl" "--debug_file=%~1" --backend -f "E:\Firmware\CodeTestL432KC\ReaderL432KC\Firmware_L432KC\EWARM\settings\NFC_L432KC.NFC_L432KC.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\Firmware\CodeTestL432KC\ReaderSIM\Firmware_L432KC\EWARM\settings\NFC_L432KC.NFC_L432KC.general.xcl" "--debug_file=%~1" --backend -f "E:\Firmware\CodeTestL432KC\ReaderSIM\Firmware_L432KC\EWARM\settings\NFC_L432KC.NFC_L432KC.driver.xcl" 
 
 @echo off 
 :end

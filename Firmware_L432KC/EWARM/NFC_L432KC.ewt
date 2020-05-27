@@ -1193,6 +1193,9 @@
                 <name>$PROJ_DIR$\..\DucaLib\src\bcdencode.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\DucaLib\src\i2c-lcd.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\DucaLib\src\ndef.c</name>
             </file>
             <file>
