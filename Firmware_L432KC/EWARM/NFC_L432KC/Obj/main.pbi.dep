@@ -1,4 +1,5 @@
 main.pbi: \
+  E:\Firmware\CodeTestL432KC\ReaderSIM\Firmware_L432KC\EWARM\..\DucaLib\inc\i2c-lcd.h \
   E:\Firmware\CodeTestL432KC\ReaderSIM\Firmware_L432KC\EWARM\..\DucaLib\inc\bcdencode.h \
   E:\Firmware\CodeTestL432KC\ReaderSIM\Firmware_L432KC\EWARM\..\DucaLib\inc\ndef.h \
   E:\Firmware\CodeTestL432KC\ReaderSIM\Firmware_L432KC\EWARM\..\DucaLib\inc\nfcm1833_module.h \

@@ -227,7 +227,6 @@
                     <state>USE_HAL_DRIVER</state>
                     <state>STM32L432xx</state>
                     <state>USE_TINZ</state>
-                    <state>NO_DEBUG_UART</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>

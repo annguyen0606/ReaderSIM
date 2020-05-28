@@ -363,7 +363,6 @@ E:\Firmware\CodeTestL432KC\ReaderSIM\Firmware_L432KC\DucaLib\inc
 -DUSE_HAL_DRIVER=1
 -DSTM32L432xx=1
 -DUSE_TINZ=1
--DNO_DEBUG_UART=1
 -D_DLIB_CONFIG_FILE_HEADER_NAME="C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\arm\\inc\\c\\DLib_Config_Full.h"
 -D_DLIB_CONFIG_FILE_STRING="C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\arm\\inc\\c\\DLib_Config_Full.h"
 -D__VERSION__="IAR ANSI C/C++ Compiler V8.40.1.212/W32 for ARM"

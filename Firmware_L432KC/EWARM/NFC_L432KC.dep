@@ -1,452 +1,295 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>4</fileVersion>
-    <fileChecksum>393692738</fileChecksum>
+    <fileChecksum>1351929376</fileChecksum>
     <configuration>
         <name>NFC_L432KC</name>
         <outputs>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_uart.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\List\NFC_L432KC.map</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_conf.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_spi_ex.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_i2c_ex.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833tinz.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833tiny.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_rcc_ex.xcl</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_ioreq.o</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_ll_usb.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pcd_ex.o</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\bcdencode.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pwr.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_core.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_rcc_ex.o</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h</file>
-            <file>$PROJ_DIR$\..\DucaLib\inc\nfcm1833tinz.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_i2c.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash_ex.xcl</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_exti.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_rcc.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Exe\NFC_L432KC.out</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc\usbd_cdc.h</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_conf.xcl</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_ctlreq.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_ll_usb.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_core.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_tim_ex.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\system_stm32l4xx.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_dma.xcl</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_spi_ex.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_gpio.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\system_stm32l4xx.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_rcc.o</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833_module.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_hid.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_cdc_vcp.o</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_spi_ex.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_spi.xcl</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h</file>
-            <file>$PROJ_DIR$\..\UserCode\src\usbd_cdc_vcp.c</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pcd_ex.xcl</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tlf.a</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pcd.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal.xcl</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c</file>
-            <file>$PROJ_DIR$\..\UserCode\inc\stm32l4xx_it.h</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ex.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr_ex.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c_ex.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim_ex.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_usb.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi_ex.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ramfunc.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pcd_ex.c</file>
-            <file>$PROJ_DIR$\..\UserCode\src\usbd_hid.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gpio.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Include\core_cm4.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\NFC_L432KC.pbd</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr.c</file>
-            <file>$PROJ_DIR$\..\UserCode\src\usbd_hid_keyboard.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart_ex.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_uart.xcl</file>
-            <file>$PROJ_DIR$\..\DucaLib\src\debug_uart.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\main.o</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Include\cmsis_iccarm.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pcd_ex.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include\stm32l432xx.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash_ex.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\bcdencode.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\system_stm32l4xx.xcl</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\ndef.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_uart_ex.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_rcc.xcl</file>
-            <file>$PROJ_DIR$\..\DucaLib\inc\nfcm1833tiny.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_cdc.xcl</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_crc.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_i2c.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_ctlreq.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pcd_ex.h</file>
-            <file>$PROJ_DIR$\..\DucaLib\inc\debug_uart.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_uart.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\startup_stm32l432xx.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_dma_ex.xcl</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_it.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\debug_uart.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_gpio.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_desc.xcl</file>
-            <file>$PROJ_DIR$\..\UserCode\src\usbd_conf.c</file>
-            <file>$PROJ_DIR$\..\DucaLib\src\ndef.c</file>
-            <file>$PROJ_DIR$\..\UserCode\src\main.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma_ex.c</file>
-            <file>$PROJ_DIR$\..\UserCode\src\stm32l4xx_it.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_crc_ex.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_exti.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash.c</file>
-            <file>$PROJ_DIR$\..\DucaLib\src\nfcm1833tiny.c</file>
-            <file>$PROJ_DIR$\..\DucaLib\src\bcdencode.c</file>
             <file>$PROJ_DIR$\..\DucaLib\src\nfcm1833_module.c</file>
             <file>$PROJ_DIR$\startup_stm32l432xx.s</file>
+            <file>$PROJ_DIR$\..\UserCode\src\main.c</file>
+            <file>$PROJ_DIR$\..\UserCode\src\stm32l4xx_it.c</file>
+            <file>$PROJ_DIR$\..\UserCode\src\usbd_conf.c</file>
             <file>$PROJ_DIR$\..\UserCode\src\usbd_desc.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c</file>
-            <file>$PROJ_DIR$\..\DucaLib\src\nfcm1833tinz.c</file>
-            <file>$PROJ_DIR$\..\UserCode\src\stm32l4xx_hal_msp.c</file>
             <file>$PROJ_DIR$\..\UserCode\src\system_stm32l4xx.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_crc.c</file>
             <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cortex.c</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma.c</file>
-            <file>$PROJ_DIR$\..\DucaLib\inc\ndef.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash_ramfunc.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Include\mpu_armv7.h</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_uart.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_desc.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pcd.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pwr_ex.o</file>
-            <file>$PROJ_DIR$\stm32l432xx_flash.icf</file>
-            <file>$PROJ_DIR$\..\UserCode\inc\usbd_hid_keyboard.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_hid_keyboard.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_cortex.__cstat.et</file>
-            <file>$PROJ_DIR$\..\DucaLib\inc\nfcm1833_module.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_i2c.xcl</file>
-            <file>$PROJ_DIR$\..\UserCode\inc\main.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pwr_ex.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash_ex.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_core.o</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Include\cmsis_compiler.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_cdc_vcp.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_conf.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_crc_ex.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pcd.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_cdc.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_msp.o</file>
-            <file>$PROJ_DIR$\..\UserCode\inc\usbd_desc.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\ndef.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_dma.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash_ramfunc.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_msp.xcl</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_crc_ex.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_i2c_ex.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_cortex.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_exti.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_msp.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pcd.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_hid_keyboard.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_hid.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_uart_ex.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833tiny.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_hid_keyboard.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_spi_ex.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_gpio.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Include\cmsis_version.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_crc_ex.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_dma_ex.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_spi.o</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include\stm32l4xx.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_dma.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\ndef.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_exti.xcl</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_cdc.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_rcc_ex.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_ll_spi.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pwr.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_uart_ex.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\bcdencode.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_uart_ex.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_it.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833tinz.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833tiny.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\main.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_desc.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_ioreq.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_spi.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_cortex.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_crc_ex.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\debug_uart.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\main.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_hid.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_crc.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h</file>
-            <file>$PROJ_DIR$\..\UserCode\inc\usbd_cdc_vcp.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_ctlreq.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pwr_ex.xcl</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833tinz.o</file>
-            <file>$PROJ_DIR$\..\UserCode\inc\usbd_hid.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_crc.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_ll_usb.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_tim.__cstat.et</file>
-            <file>$PROJ_DIR$\..\UserCode\inc\usbd_conf.h</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_tim_ex.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_ll_usb.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_spi.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pcd.__cstat.et</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal.o</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_tim.xcl</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_crc.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_dma_ex.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833_module.__cstat.et</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\debug_uart.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_tim.o</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_ioreq.__cstat.et</file>
-            <file>$PROJ_DIR$\..\DucaLib\inc\bcdencode.h</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash_ramfunc.xcl</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Exe\NFC_L432KC.hex</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_crc.c</file>
+            <file>$PROJ_DIR$\..\DucaLib\src\ndef.c</file>
+            <file>$PROJ_DIR$\..\DucaLib\src\nfcm1833tiny.c</file>
+            <file>$PROJ_DIR$\..\DucaLib\src\nfcm1833tinz.c</file>
+            <file>$PROJ_DIR$\..\DucaLib\src\i2c-lcd.c</file>
+            <file>$PROJ_DIR$\..\UserCode\src\stm32l4xx_hal_msp.c</file>
+            <file>$PROJ_DIR$\..\DucaLib\src\bcdencode.c</file>
             <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_i2c_ex.xcl</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\debug_uart.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pwr.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_ioreq.__cstat.et</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_tim.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Exe\NFC_L432KC.hex</file>
             <file>$PROJ_DIR$\..\UserCode\inc\stm32l4xx_hal_conf.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833_module.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash_ramfunc.xcl</file>
             <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_tim_ex.o</file>
             <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_exti.o</file>
-            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pwr.xcl</file>
-            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_dma_ex.o</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h</file>
             <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
             <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal.__cstat.et</file>
             <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_it.xcl</file>
             <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833_module.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
             <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h</file>
+            <file>$PROJ_DIR$\..\DucaLib\inc\bcdencode.h</file>
             <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_cdc_vcp.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_crc.o</file>
             <file>$PROJ_DIR$\NFC_L432KC\Obj\i2c-lcd.__cstat.et</file>
             <file>$PROJ_DIR$\..\DucaLib\inc\i2c-lcd.h</file>
-            <file>$PROJ_DIR$\..\DucaLib\src\i2c-lcd.c</file>
             <file>$PROJ_DIR$\NFC_L432KC\Obj\i2c-lcd.o</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h</file>
             <file>$PROJ_DIR$\NFC_L432KC\Obj\i2c-lcd.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_spi.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_ll_usb.__cstat.et</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_tim_ex.xcl</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\debug_uart.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_hid.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_ioreq.xcl</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h</file>
+            <file>$PROJ_DIR$\..\UserCode\inc\usbd_cdc_vcp.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pwr_ex.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_tim.__cstat.et</file>
+            <file>$PROJ_DIR$\..\UserCode\inc\usbd_hid.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_crc_ex.xcl</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_ll_usb.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_crc.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_ctlreq.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_crc.xcl</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_cortex.xcl</file>
+            <file>$PROJ_DIR$\..\UserCode\inc\usbd_conf.h</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_spi.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833tinz.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pcd.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_tim.xcl</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\system_stm32l4xx.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash_ramfunc.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_uart.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_ctlreq.__cstat.et</file>
+            <file>$PROJ_DIR$\..\DucaLib\inc\debug_uart.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_dma_ex.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_uart_ex.__cstat.et</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pcd_ex.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_it.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_rcc.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_desc.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\startup_stm32l432xx.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash_ex.o</file>
+            <file>$PROJ_DIR$\..\DucaLib\inc\ndef.h</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Include\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_uart.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_desc.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pcd.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_cdc.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_i2c.o</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_crc.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pwr_ex.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\bcdencode.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\ndef.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\debug_uart.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_gpio.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+            <file>$PROJ_DIR$\..\DucaLib\inc\nfcm1833tiny.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\main.o</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_rcc.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\system_stm32l4xx.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_cdc_vcp.o</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h</file>
+            <file>$PROJ_DIR$\..\UserCode\inc\stm32l4xx_it.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\NFC_L432KC.pbd</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pcd_ex.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_spi_ex.xcl</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Include\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\system_stm32l4xx.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pcd_ex.__cstat.et</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_spi_ex.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_spi.xcl</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include\stm32l432xx.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_ll_usb.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_tim_ex.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_dma.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833_module.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_hid.o</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tlf.a</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_uart.xcl</file>
+            <file>$PROJ_DIR$\..\DucaLib\src\debug_uart.c</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal.xcl</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Include\core_cm4.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_core.__cstat.et</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_gpio.o</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\bcdencode.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_it.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833tinz.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_uart_ex.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833tiny.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\main.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_hid_keyboard.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_desc.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833tiny.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_rcc_ex.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_hid_keyboard.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_crc_ex.o</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_ll_spi.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pwr.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_hid.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_gpio.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_dma_ex.__cstat.et</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include\stm32l4xx.h</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_msp.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_spi.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_dma.__cstat.et</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pcd.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_exti.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_cdc.__cstat.et</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_uart_ex.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_uart_ex.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_spi_ex.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\ndef.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_hid_keyboard.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_core.o</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\CMSIS\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash_ex.__cstat.et</file>
+            <file>$PROJ_DIR$\..\UserCode\inc\usbd_desc.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_dma.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_cortex.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_exti.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_cdc.o</file>
+            <file>$PROJ_DIR$\..\UserCode\inc\main.h</file>
+            <file>$PROJ_DIR$\stm32l432xx_flash.icf</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\ndef.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_conf.__cstat.et</file>
+            <file>$PROJ_DIR$\..\UserCode\inc\usbd_hid_keyboard.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_cdc_vcp.xcl</file>
+            <file>$PROJ_DIR$\..\DucaLib\inc\nfcm1833_module.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pcd.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_msp.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_cortex.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pwr_ex.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_crc_ex.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_msp.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash.o</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_crc_ex.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash_ramfunc.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_i2c_ex.o</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_i2c.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_spi_ex.__cstat.et</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_core.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash_ex.xcl</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\bcdencode.xcl</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma_ex.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\List\NFC_L432KC.map</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_i2c_ex.__cstat.et</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_exti.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pcd_ex.o</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_pwr.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_i2c.__cstat.et</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc\usbd_cdc.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833tinz.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_rcc_ex.o</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Exe\NFC_L432KC.out</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_ll_usb.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_conf.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\..\DucaLib\inc\nfcm1833tinz.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_rcc_ex.xcl</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_ctlreq.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_rcc.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_conf.o</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_flash.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\nfcm1833tiny.__cstat.et</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\usbd_ioreq.o</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_exti.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi_ex.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_usb.c</file>
+            <file>$PROJ_DIR$\..\UserCode\src\usbd_hid_keyboard.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c</file>
+            <file>$PROJ_DIR$\NFC_L432KC\Obj\stm32l4xx_hal_uart.__cstat.et</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pcd.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gpio.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ramfunc.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim_ex.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart_ex.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c_ex.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr_ex.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ex.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c</file>
+            <file>$PROJ_DIR$\..\UserCode\src\usbd_hid.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_crc_ex.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pcd_ex.c</file>
+            <file>$PROJ_DIR$\..\UserCode\src\usbd_cdc_vcp.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma_ex.c</file>
+            <file>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash.c</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 26 1</file>
+                    <file> 220 209</file>
                 </tool>
             </outputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\NFC_L432KC\Exe\NFC_L432KC.out</name>
+            <name>$PROJ_DIR$\..\DucaLib\src\nfcm1833_module.c</name>
             <outputs>
                 <tool>
-                    <name>OBJCOPY</name>
-                    <file> 245</file>
-                </tool>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 1</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 141 90 263 85 94 257 177 219 106 230 170 235 182 164 236 250 143 89 165 40 101 169 161 139 14 17 140 42 19 184 179 240 249 105 176 109 222 37 160 46 2 154 32 203 45 174 12 254 28 47 53</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\UserCode\src\usbd_cdc_vcp.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 156</file>
-                </tool>
-                <tool>
                     <name>ICCARM</name>
-                    <file> 46</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 259</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 215 27 213 20 224 108 111 11 147 93 190 218 35 5 30 199 149 258 248 15 206 185 88 74 166 181 155 86 253 136 241 233 91 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 50 31 134 146 243</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pcd.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 159</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 139</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 229</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 99</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 160</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 191</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 27 213 20 224 108 111 11 147 93 190 218 35 5 30 199 149 258 248 15 206 185 88 74 166 181 155 86 253 136 241 233 91 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 50 31</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 18</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 154</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
                     <file> 34</file>
                 </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 50 224 108 111 11 147 93 190 218 35 5 30 199 149 258 248 15 206 185 88 74 166 181 155 86 253 136 241 233 91 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 20 213 31</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ex.c</name>
-            <outputs>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 23</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 89</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 153</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 10</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 19</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 192</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 97</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 42</file>
+                    <file> 129</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
@@ -456,444 +299,62 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
+                    <file> 224 187 180 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr_ex.c</name>
+            <name>$PROJ_DIR$\startup_stm32l432xx.s</name>
             <outputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 217</file>
+                    <name>AARM</name>
+                    <file> 89</file>
                 </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\UserCode\src\main.c</name>
+            <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 140</file>
+                    <file> 108</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 145</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 151</file>
+                    <file> 75</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
+                    <file> 180 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 187 91 37 41</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c_ex.c</name>
+            <name>$PROJ_DIR$\..\UserCode\src\stm32l4xx_it.c</name>
             <outputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 246</file>
-                </tool>
-                <tool>
                     <name>ICCARM</name>
-                    <file> 169</file>
+                    <file> 85</file>
                 </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 6</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim_ex.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 226</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 249</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 36</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_usb.c</name>
-            <outputs>
                 <tool>
                     <name>BICOMP</name>
                     <file> 33</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 222</file>
-                </tool>
-                <tool>
                     <name>__cstat</name>
-                    <file> 227</file>
+                    <file> 141</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi_ex.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 48</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 179</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 3</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ramfunc.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 244</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 165</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 135</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pcd_ex.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 52</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 14</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 87</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\UserCode\src\usbd_hid.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 175</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 45</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 211</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 220 213 20 224 108 111 11 147 93 190 218 35 5 30 199 149 258 248 15 206 185 88 74 166 181 155 86 253 136 241 233 91 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 50 31</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gpio.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 112</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 40</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 180</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 49</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 184</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 205</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 204</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 12</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 242</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 213 20 224 108 111 11 147 93 190 218 35 5 30 199 149 258 248 15 206 185 88 74 166 181 155 86 253 136 241 233 91 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 50 31</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 82</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 105</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 0</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 148</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 101</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 22</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 251</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 17</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 194</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\UserCode\src\usbd_hid_keyboard.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 178</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 174</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 144</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 142 20 224 108 111 11 147 93 190 218 35 5 30 199 149 258 248 15 206 185 88 74 166 181 155 86 253 136 241 233 91 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 50 213 31 162 220</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 232</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 240</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 223</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart_ex.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 197</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 176</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 95</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 216</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 32</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 102</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 31 20 224 108 111 11 147 93 190 218 35 5 30 199 149 258 248 15 206 185 88 74 166 181 155 86 253 136 241 233 91 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 213 50</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\DucaLib\src\debug_uart.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 239</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 209</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 110</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 104 149 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 108</file>
+                    <file> 180 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 115</file>
                 </tool>
             </inputs>
         </file>
@@ -901,81 +362,12 @@
             <name>$PROJ_DIR$\..\UserCode\src\usbd_conf.c</name>
             <outputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 29</file>
-                </tool>
-                <tool>
                     <name>ICCARM</name>
-                    <file> 2</file>
+                    <file> 230</file>
                 </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 157</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 258 248 15 206 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 20 224 108 35 5 30 199 149 50 213 31 27</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\DucaLib\src\ndef.c</name>
-            <outputs>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 163</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 94</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 187</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 134 146 149 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 30 199</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\UserCode\src\main.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 202</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 85</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 210</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 149 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 146 134 243 261</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma_ex.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 107</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 236</file>
+                    <file> 222</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
@@ -985,53 +377,302 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
+                    <file> 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 36 24 203 68 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 213 67 107 127 228 223 168 180 114 65 226 216</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\UserCode\src\stm32l4xx_it.c</name>
+            <name>$PROJ_DIR$\..\UserCode\src\usbd_desc.c</name>
             <outputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 256</file>
+                    <name>ICCARM</name>
+                    <file> 147</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 109</file>
+                    <name>BICOMP</name>
+                    <file> 88</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 198</file>
+                    <file> 94</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 149 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 58</file>
+                    <file> 114 67 107 87 205 185 105 159 48 127 228 223 168 180 36 24 203 68 157 124 135 190 139 173 119 35 92 30 74 102 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 213 65 226 175</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_crc_ex.c</name>
+            <name>$PROJ_DIR$\..\UserCode\src\system_stm32l4xx.c</name>
             <outputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 208</file>
+                    <name>ICCARM</name>
+                    <file> 120</file>
                 </tool>
                 <tool>
+                    <name>BICOMP</name>
+                    <file> 76</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 111</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
                     <name>ICCARM</name>
+                    <file> 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 36 24 203 68 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cortex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 177</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 66</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 191</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 72</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 134</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_crc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 64</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 62</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\DucaLib\src\ndef.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 101</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
                     <file> 182</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 158</file>
+                    <file> 170</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
+                    <file> 91 187 180 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 223 168</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\DucaLib\src\nfcm1833tiny.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 148</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 144</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 232</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 106 187 180 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 223 168</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\DucaLib\src\nfcm1833tinz.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 70</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 142</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 217</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 224 187 180 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 223 168 152</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\DucaLib\src\i2c-lcd.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 42</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 44</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 40</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\UserCode\src\stm32l4xx_hal_msp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 189</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 194</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 160</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 180 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\DucaLib\src\bcdencode.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 100</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 207</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 140</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37 180 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\DucaLib\src\debug_uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 51</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 17</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 103</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 80 180 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 107</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\NFC_L432KC\Exe\NFC_L432KC.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 209</file>
+                </tool>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 181 100 42 108 101 34 148 70 89 72 177 39 151 176 29 28 195 90 198 138 97 199 189 95 212 214 99 110 218 161 169 22 27 78 143 85 61 120 179 112 230 172 227 147 130 150 233 31 219 113 131</file>
                 </tool>
             </inputs>
         </file>
@@ -1039,12 +680,127 @@
             <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_exti.c</name>
             <outputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 188</file>
+                    <name>ICCARM</name>
+                    <file> 28</file>
                 </tool>
                 <tool>
+                    <name>BICOMP</name>
+                    <file> 164</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 178</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
                     <name>ICCARM</name>
-                    <file> 250</file>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 86</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 229</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 169</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 118</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 202</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 78</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 132</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 241</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_usb.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 61</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 125</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 46</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\UserCode\src\usbd_hid_keyboard.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 150</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 146</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
@@ -1054,269 +810,168 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
+                    <file> 184 213 67 107 87 205 185 105 159 48 127 228 223 168 180 36 24 203 68 157 124 135 190 139 173 119 35 92 30 74 102 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 114 65 226 175 58</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash.c</name>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c</name>
             <outputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 150</file>
+                    <name>ICCARM</name>
+                    <file> 172</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 143</file>
+                    <name>BICOMP</name>
+                    <file> 204</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 4</file>
+                    <file> 136</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
+                    <file> 114 67 107 87 205 185 105 159 48 127 228 223 168 180 36 24 203 68 157 124 135 190 139 173 119 35 92 30 74 102 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 213 65 226</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\DucaLib\src\nfcm1833tiny.c</name>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pcd.c</name>
             <outputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 201</file>
+                    <name>ICCARM</name>
+                    <file> 95</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 177</file>
+                    <name>BICOMP</name>
+                    <file> 188</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 9</file>
+                    <file> 71</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 98 146 149 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 30 199</file>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\DucaLib\src\bcdencode.c</name>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi.c</name>
             <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 16</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 90</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 196</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 243 149 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\DucaLib\src\nfcm1833_module.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 44</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 257</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 237</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 21 146 149 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\startup_stm32l432xx.s</name>
-            <outputs>
-                <tool>
-                    <name>AARM</name>
-                    <file> 106</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\UserCode\src\usbd_desc.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 113</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 203</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 138</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 50 224 108 111 11 147 93 190 218 35 5 30 199 149 258 248 15 206 185 88 74 166 181 155 86 253 136 241 233 91 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 20 213 31 162</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 56</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 230</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 255</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\DucaLib\src\nfcm1833tinz.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 200</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 219</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 8</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 21 146 149 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103 30 199 193</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\UserCode\src\stm32l4xx_hal_msp.c</name>
-            <outputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 167</file>
-                </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 161</file>
                 </tool>
                 <tool>
+                    <name>BICOMP</name>
+                    <file> 123</file>
+                </tool>
+                <tool>
                     <name>__cstat</name>
-                    <file> 172</file>
+                    <file> 45</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 149 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\UserCode\src\system_stm32l4xx.c</name>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gpio.c</name>
             <outputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 92</file>
+                    <name>ICCARM</name>
+                    <file> 138</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 37</file>
+                    <name>BICOMP</name>
+                    <file> 104</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 41</file>
+                    <file> 155</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 258 248 15 206 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_crc.c</name>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim.c</name>
             <outputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 221</file>
+                    <name>ICCARM</name>
+                    <file> 22</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 235</file>
+                    <name>BICOMP</name>
+                    <file> 73</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 212</file>
+                    <file> 57</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cortex.c</name>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ramfunc.c</name>
             <outputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 207</file>
+                    <name>ICCARM</name>
+                    <file> 198</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 170</file>
+                    <name>BICOMP</name>
+                    <file> 26</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 145</file>
+                    <file> 77</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 49</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 126</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
                 </tool>
             </inputs>
         </file>
@@ -1324,45 +979,390 @@
             <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma.c</name>
             <outputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 38</file>
+                    <name>ICCARM</name>
+                    <file> 176</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 164</file>
+                    <name>BICOMP</name>
+                    <file> 128</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 186</file>
+                    <file> 162</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\DucaLib\src\i2c-lcd.c</name>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart_ex.c</name>
             <outputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 264</file>
+                    <name>ICCARM</name>
+                    <file> 143</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 263</file>
+                    <name>BICOMP</name>
+                    <file> 167</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 260</file>
+                    <file> 82</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 261 258 248 15 206 185 88 74 166 111 11 147 93 190 181 155 86 253 136 241 233 91 218 43 24 252 189 238 7 225 100 168 234 84 96 152 247 214 231 228 39 137 195 173 13 103</file>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 199</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 16</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 210</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 214</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 18</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 153</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 99</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 56</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 192</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 179</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 96</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 165</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 216 65 213 67 107 87 205 185 105 159 48 127 228 223 168 180 36 24 203 68 157 124 135 190 139 173 119 35 92 30 74 102 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 114 226</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 97</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 201</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 215</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 90</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 206</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 174</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 218</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 225</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 149</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\UserCode\src\usbd_hid.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 130</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 154</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 58 65 213 67 107 87 205 185 105 159 48 127 228 223 168 180 36 24 203 68 157 124 135 190 139 173 119 35 92 30 74 102 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 114 226</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_crc_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 151</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 193</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pcd_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 212</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 117</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 121</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\UserCode\src\usbd_cdc_vcp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 112</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 186</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 38</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 55 216 65 213 67 107 87 205 185 105 159 48 127 228 223 168 180 36 24 203 68 157 124 135 190 139 173 119 35 92 30 74 102 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 114 226 91 187 37</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 227</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 63</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 226 213 67 107 87 205 185 105 159 48 127 228 223 168 180 36 24 203 68 157 124 135 190 139 173 119 35 92 30 74 102 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 65 114</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 233</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 53</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 65 213 67 107 87 205 185 105 159 48 127 228 223 168 180 36 24 203 68 157 124 135 190 139 173 119 35 92 30 74 102 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84 114 226</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 81</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 156</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32Cube_FW_L4_V1.14.0\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 195</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 197</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 231</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36 24 203 68 157 124 135 190 87 205 185 105 159 139 173 119 35 92 30 74 102 48 109 211 20 158 21 208 60 98 196 50 137 83 200 43 54 47 69 122 93 166 163 221 84</file>
                 </tool>
             </inputs>
         </file>

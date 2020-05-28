@@ -53,34 +53,34 @@ int main (void)
     MX_USART1_UART_Init();
     MX_USART2_UART_Init();
     WakeUp_CR95HF();
-    display("Ready");
+    //display("Ready");
     lcd_init();
     lcd_goto_XY(1,5);
     lcd_send_string("Welcome");    
     int a = 0;
-//    while(a < 1)
-//    {
-//      if(Sim_sendCommand("AT","OK",5000))
-//      {
-//        HAL_Delay(10);
-//        if(Sim_sendCommand("AT+SAPBR=3,1,\"Contype\",\"GPRS\"","OK",5000))
-//        {
-//          HAL_Delay(10);
-//          if(Sim_sendCommand("AT+SAPBR=3,1,\"APN\",\"e-connect\"","OK",5000))		
-//          {
-//            HAL_Delay(10);
-//            if(Sim_sendCommand("AT+SAPBR=1,1","OK",5000))
-//            {
-//              if(Sim_sendCommand("AT+HTTPINIT","OK",5000))
-//              {
-//                HAL_Delay(10);
-//                a = 1;
-//              }
-//            }
-//          }
-//        }
-//      }  
-//    }    
+    while(a < 1)
+    {
+      if(Sim_sendCommand("AT","OK",5000))
+      {
+        HAL_Delay(10);
+        if(Sim_sendCommand("AT+SAPBR=3,1,\"Contype\",\"GPRS\"","OK",5000))
+        {
+          HAL_Delay(10);
+          if(Sim_sendCommand("AT+SAPBR=3,1,\"APN\",\"e-connect\"","OK",5000))		
+          {
+            HAL_Delay(10);
+            if(Sim_sendCommand("AT+SAPBR=1,1","OK",5000))
+            {
+              if(Sim_sendCommand("AT+HTTPINIT","OK",5000))
+              {
+                HAL_Delay(10);
+                a = 1;
+              }
+            }
+          }
+        }
+      }  
+    }    
     lcd_clear_display();
     HAL_Delay(1000);
     lcd_goto_XY(1,5);
@@ -90,7 +90,7 @@ int main (void)
     HAL_Delay(1000);
     lcd_goto_XY(1,5);
     lcd_send_string("Conek");    
-    //HAL_Delay(1000);
+    HAL_Delay(1000);
     while (1)
     {     
       char url[110] = "AT+HTTPPARA=\"URL\",\"http://testcodeesp8266.000webhostapp.com/receiver.php?UID=";
@@ -105,69 +105,96 @@ int main (void)
                 idTagBCD[count] += 0x30;
               }
             } 
-            //memcpy(url+77,idTagBCD,16);
-            //memcpy(url+93,url2,10);
-//            HAL_Delay (1000);
-//            lcd_clear_display();
-//            HAL_Delay (1000);
-//            lcd_goto_XY(1,5);
-//            lcd_send_string("abcd");                    
-            display(idTagBCD);  
+            memcpy(url+77,idTagBCD,16);
+            memcpy(url+93,url2,10);
+            __HAL_SPI_DISABLE(&spi_to_nfcm1833tinz);
             lcd_clear_display();
+            HAL_Delay (100);
+            lcd_goto_XY(1,5);
+            lcd_send_string("Conek");    
+            lcd_goto_XY(2,0);
+            lcd_send_string(idTagBCD);                    
+            //display(idTagBCD);  
             //display(url); 
 
-//            if(Sim_sendCommand(url,"OK",5000))
-//            {
-//              HAL_Delay(10);
-//              if(Sim_sendCommand("AT+HTTPACTION=0","OK",5000))
-//              {
-//                if(Sim_Response("200",10000))
-//                {
-//                  lcd_clear_display();
-//                  HAL_Delay (1000);
-//                  lcd_goto_XY(1,5);
-//                  lcd_send_string("Conek"); 
-//                  lcd_goto_XY(2,2);
-//                  lcd_send_string("Send Failed");
-//                  lcd_clear_display();
-//                  HAL_Delay(1000);
-//                  lcd_goto_XY(1,5);
-//                  lcd_send_string("Conek");                  
-//                  
-//                }
-//                else
-//                {
-//                  lcd_clear_display();
-//                  HAL_Delay (1000);
-//                  lcd_goto_XY(1,5);
-//                  lcd_send_string("Conek"); 
-//                  lcd_goto_XY(2,1);
-//                  lcd_send_string("Send Success");    
-//                  lcd_clear_display();
-//                  HAL_Delay (3000);    
-//                  lcd_goto_XY(1,5);
-//                  lcd_send_string("Conek");                  
-//                }
-//              }
-//            }      
-//            HAL_Delay(10);
-//            if(Sim_sendCommand("AT+HTTPREAD","OK",5000))
-//            {
-//                  
-//            }
-   
+            if(Sim_sendCommand(url,"OK",5000))
+            {
+              HAL_Delay(10);
+              if(Sim_sendCommand("AT+HTTPACTION=0","OK",5000))
+              {
+                if(Sim_Response("200",10000))
+                {
+                  lcd_clear_display();
+                  HAL_Delay (100);
+                  lcd_goto_XY(1,5);
+                  lcd_send_string("Conek"); 
+                  lcd_goto_XY(2,2);
+                  lcd_send_string("Send Success");
+                  HAL_Delay(2000);
+                  lcd_clear_display();
+                  HAL_Delay (100);
+                  lcd_goto_XY(1,5);
+                  lcd_send_string("Conek");                  
+                  
+                }
+                else
+                {
+                  lcd_clear_display();
+                  HAL_Delay (100);
+                  lcd_goto_XY(1,5);
+                  lcd_send_string("Conek"); 
+                  lcd_goto_XY(2,2);
+                  lcd_send_string("Send Failed");    
+                  HAL_Delay (2000);    
+                  lcd_clear_display();
+                  HAL_Delay (100);
+                  lcd_goto_XY(1,5);
+                  lcd_send_string("Conek");                  
+                }
+              }
+              else
+              {
+                  lcd_clear_display();
+                  HAL_Delay (100);
+                  lcd_goto_XY(1,5);
+                  lcd_send_string("Conek"); 
+                  lcd_goto_XY(2,3);
+                  lcd_send_string("Send Failed");
+                  HAL_Delay(2000);
+                  lcd_clear_display();
+                  HAL_Delay (100);
+                  lcd_goto_XY(1,5);
+                  lcd_send_string("Conek");                                  
+              }
+            }      
+            if(Sim_sendCommand("AT+HTTPREAD","OK",5000))
+            {
+                  
+            }
+            MX_GPIO_Init();
+            MX_CRC_Init();
+            MX_I2C1_Init();
+            MX_SPI1_Init();
+            MX_USART1_UART_Init();
+            MX_USART2_UART_Init();
+            WakeUp_CR95HF();
+            HAL_Delay (250);
             while (getDeviceID (idTag) != NO_TAG)
             {
               HAL_Delay (50);
             }
-          }                      
+                  lcd_goto_XY(2,2);
+                  lcd_send_string("Hello World!");            
+            
+          }
+          
     }
  
 }
 
 void display(void* data)																								
 {
-	HAL_UART_Transmit(&huart1,(uint8_t *)data,(uint16_t)strlen(data),1000);
+	HAL_UART_Transmit(&huart2,(uint8_t *)data,(uint16_t)strlen(data),1000);
 }
 void deleteBuffer(char* buf)
 {
@@ -183,11 +210,11 @@ int8_t Sim_sendCommand(char*command ,char*response,uint32_t timeout)
   deleteBuffer(Sim_response);
   uint32_t time = HAL_GetTick();
   uint32_t time1 = HAL_GetTick();
-  HAL_UART_Transmit(&huart2, (uint8_t *)command, (uint16_t)strlen(command), 1000);
-  HAL_UART_Transmit(&huart2,(uint8_t *)"\r\n",(uint16_t)strlen("\r\n"),1000);
+  HAL_UART_Transmit(&huart1, (uint8_t *)command, (uint16_t)strlen(command), 1000);
+  HAL_UART_Transmit(&huart1,(uint8_t *)"\r\n",(uint16_t)strlen("\r\n"),1000);
   do
   {
-    while(HAL_UART_Receive(&huart2, (uint8_t *)Sim_Rxdata, 1, 1000) != HAL_OK)
+    while(HAL_UART_Receive(&huart1, (uint8_t *)Sim_Rxdata, 1, 1000) != HAL_OK)
     {
       if(HAL_GetTick() - time > timeout) 
       {
@@ -198,7 +225,7 @@ int8_t Sim_sendCommand(char*command ,char*response,uint32_t timeout)
     Sim_response[count++] = Sim_Rxdata[0];
     while((HAL_GetTick() - time < timeout))
     {
-      if(HAL_UART_Receive(&huart2, (uint8_t *)Sim_Rxdata, 1, 1000) == HAL_OK)
+      if(HAL_UART_Receive(&huart1, (uint8_t *)Sim_Rxdata, 1, 1000) == HAL_OK)
       {
         Sim_response[count++] = Sim_Rxdata[0];
         time1 = HAL_GetTick();
@@ -233,7 +260,7 @@ int8_t Sim_Response(char*response,uint32_t timeout)
   uint32_t time1 = HAL_GetTick();
   do
   {
-    while(HAL_UART_Receive(&huart2, (uint8_t *)Sim_Rxdata, 1, 1000) != HAL_OK)
+    while(HAL_UART_Receive(&huart1, (uint8_t *)Sim_Rxdata, 1, 1000) != HAL_OK)
     {
       if(HAL_GetTick() - time > timeout) 
       {
@@ -244,7 +271,7 @@ int8_t Sim_Response(char*response,uint32_t timeout)
     Sim_response[count++] = Sim_Rxdata[0];
     while((HAL_GetTick() - time < timeout))
     {
-      if(HAL_UART_Receive(&huart2, (uint8_t *)Sim_Rxdata, 1, 1000) == HAL_OK)
+      if(HAL_UART_Receive(&huart1, (uint8_t *)Sim_Rxdata, 1, 1000) == HAL_OK)
       {
         Sim_response[count++] = Sim_Rxdata[0];
         time1 = HAL_GetTick();
