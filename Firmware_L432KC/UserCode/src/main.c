@@ -10,7 +10,6 @@ I2C_HandleTypeDef hi2c1;
     SPI_HandleTypeDef spi_to_nfcm1833tinz;
 #endif
 
-UART_HandleTypeDef huart2;
 UART_HandleTypeDef huart1;
 static void MX_USART1_UART_Init(void);
 static void MX_USART2_UART_Init (void);
@@ -24,7 +23,6 @@ cc_file_data_t cc_data;
 tag_format_t tag_data;
 uint32_t error_count = 0;
 HAL_StatusTypeDef status;
-void uart_printf(uint8_t *message);
 void SystemClock_Config (void);
 static void MX_GPIO_Init (void);
 static void MX_CRC_Init (void);
@@ -32,17 +30,21 @@ static void MX_CRC_Init (void);
 #ifdef USE_TINZ
     static void MX_SPI1_Init (void);
 #endif 
-void display(void* data);
+void display(char* data);
 void deleteBuffer(char* buf);
 uint8_t dataReceive = 0;
 char Sim_response[500] = {0};
 char Sim_Rxdata[2] = {0};
 int8_t Sim_sendCommand(char*command ,char*response,uint32_t timeout);
 int8_t Sim_Response(char*response,uint32_t timeout);
-int permissReadTag = 0;
+uint8_t permissReadTag = 0;
 uint8_t So_Tien[20];
-int viTriTien = 0;
-int demFunction = 0;
+uint8_t viTriTien = 0;
+
+void LCD_Display_Faild();
+void LCD_Display_Success();
+void LCD_Dislay_Clear();
+void LCD_Display(char* str);
 int main (void)
 {
     uint8_t count = 0;
@@ -54,41 +56,51 @@ int main (void)
     MX_I2C1_Init();
     MX_SPI1_Init();
     MX_USART1_UART_Init();
-    MX_USART2_UART_Init();
+    HAL_Delay(2000);
     WakeUp_CR95HF();
-    display("Ready");
     lcd_init();
     lcd_goto_XY(1,4);
     lcd_send_string("Welcome");    
     int a = 0;
-//    while(a < 1)
-//    {
-//      if(Sim_sendCommand("AT","OK",5000))
-//      {
-//        HAL_Delay(10);
-//        if(Sim_sendCommand("AT+SAPBR=3,1,\"Contype\",\"GPRS\"","OK",5000))
-//        {
-//          HAL_Delay(10);
-//          if(Sim_sendCommand("AT+SAPBR=3,1,\"APN\",\"e-connect\"","OK",5000))		
-//          {
-//            HAL_Delay(10);
-//            if(Sim_sendCommand("AT+SAPBR=1,1","OK",5000))
-//            {
-//              if(Sim_sendCommand("AT+HTTPINIT","OK",5000))
-//              {
-//                HAL_Delay(10);
-//                a = 1;
-//              }
-//            }
-//          }
-//        }
-//      }  
-//    }    
+    while(a < 1)
+    {
+      if(Sim_sendCommand("AT","OK",10000))
+      {
+        lcd_goto_XY(2,5);
+        lcd_send_string(".");
+        HAL_Delay(10);
+        if(Sim_sendCommand("AT+SAPBR=3,1,\"Contype\",\"GPRS\"","OK",10000))
+        {
+          HAL_Delay(10);
+          lcd_goto_XY(2,6);
+          lcd_send_string(".");          
+          if(Sim_sendCommand("AT+SAPBR=3,1,\"APN\",\"e-connect\"","OK",10000))		
+          {
+            HAL_Delay(10);
+            lcd_goto_XY(2,7);
+            lcd_send_string(".");            
+            if(Sim_sendCommand("AT+SAPBR=1,1","OK",10000))
+            {
+              HAL_Delay(10);
+              lcd_goto_XY(2,8);
+              lcd_send_string(".");              
+              if(Sim_sendCommand("AT+HTTPINIT","OK",10000))
+              {
+                HAL_Delay(10);
+                lcd_goto_XY(2,9);
+                lcd_send_string(".");                              
+                a = 1;
+              }
+            }
+          }
+        }
+      }  
+    }    
     lcd_clear_display();
-    HAL_Delay(1000);
+    HAL_Delay(500);
     lcd_goto_XY(1,5);
     lcd_send_string("Ready"); 
-    HAL_Delay(3000);
+    HAL_Delay(1000);
     lcd_clear_display();
     HAL_Delay(1000);
     lcd_goto_XY(1,5);
@@ -96,259 +108,230 @@ int main (void)
     HAL_Delay(1000);
     while (1)
     {  
-      if(permissReadTag == 0)
-      {
-          if ( (ping_module() == PING_OK) && (select_tag_type (TYPE_5) == PROTOCOL_OK) && (getDeviceID (idTag) == SEND_RECV_OK))
+          char url[140] = "AT+HTTPPARA=\"URL\",\"http://testcodeesp8266.000webhostapp.com/receiver.php?UID=";
+          switch(permissReadTag)
           {
-            idTag[7] = 0x00;
-            if (encode8byte_little_edian (idTag, idTagBCD) == 0)
-            {
-              for (count = 0; count < ID_TAG_SIZE * 2; count++)
+          case 0:
+              if ( (ping_module() == PING_OK) && (select_tag_type (TYPE_5) == PROTOCOL_OK) && (getDeviceID (idTag) == SEND_RECV_OK))
               {
-                idTagBCD[count] += 0x30;
+                idTag[7] = 0x00;
+                if (encode8byte_little_edian (idTag, idTagBCD) == 0)
+                {
+                  for (count = 0; count < ID_TAG_SIZE * 2; count++)
+                  {
+                    idTagBCD[count] += 0x30;
+                  }
+                } 
+                __HAL_SPI_DISABLE(&spi_to_nfcm1833tinz);
+                HAL_Delay (50);
+                lcd_clear_display();
+                HAL_Delay (50);
+                lcd_goto_XY(1,5);
+                lcd_send_string("Conek");    
+                lcd_goto_XY(2,0);
+                lcd_send_string(idTagBCD); 
+                HAL_Delay (500);
+                lcd_clear_display();
+                HAL_Delay (50);
+                lcd_goto_XY(1,5);
+                lcd_send_string("Conek");                    
+                lcd_goto_XY(2,3);
+                lcd_send_string("Sending...");                 
+                display(url);
+                display(idTagBCD);
+                display("&time=");
+                display("1000");
+                if(Sim_sendCommand("\"","OK",10000))
+                {
+                  HAL_Delay(10);
+                  if(Sim_sendCommand("AT+HTTPPARA=\"CID\",1","OK",10000))
+                  {
+                    HAL_Delay(10);
+                    if(Sim_sendCommand("AT+HTTPACTION=0","OK",10000))
+                    {
+                      if(Sim_Response("200",10000))
+                      {         
+                        if(Sim_sendCommand("AT+HTTPREAD","10",10000)){
+                          
+                        }
+                        LCD_Display_Success();    
+                      }
+                      else
+                      {
+                        LCD_Display_Faild();                        
+                      }
+                    }
+                    else
+                    {
+                      LCD_Display_Faild();
+                    }
+                  }
+                }
+                __HAL_SPI_DISABLE(&spi_to_nfcm1833tinz);
+                HAL_Delay (100);
+                //__HAL_UART_DISABLE(&huart1);
+                //__HAL_I2C_DISABLE(&hi2c1);
+                //__HAL_SPI_ENABLE(&spi_to_nfcm1833tinz);
+                //LCD_Dislay_Clear();              
+                while (getDeviceID (idTag) != NO_TAG)
+                {
+                  HAL_Delay (50);
+                }        
+                HAL_Delay (500);
+                __HAL_SPI_DISABLE(&spi_to_nfcm1833tinz);
+                HAL_Delay (100);
+                LCD_Dislay_Clear();
+                permissReadTag = 0;    
+              }            
+              break;
+            case 1:
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_3)==0)
+              {
+                viTriTien++;    
+                So_Tien[viTriTien - 1] = 0x30;
+                LCD_Display(So_Tien);
               }
-            } 
-            display(idTagBCD);
-            __HAL_SPI_DISABLE(&spi_to_nfcm1833tinz);
-            lcd_clear_display();
-            HAL_Delay (100);
-            lcd_goto_XY(1,5);
-            lcd_send_string("Conek");    
-            lcd_goto_XY(2,3);
-            lcd_send_string("Xin Cam On");                    
-//            //display(idTagBCD);  
-//            //display(url); 
-//
-
-//            lcd_clear_display();
-//            HAL_Delay (100);
-//            lcd_goto_XY(1,5);
-//            lcd_send_string("Conek");
-            while (getDeviceID (idTag) != NO_TAG)
-            {
-              HAL_Delay (50);
-            }        
-            HAL_Delay (1000);
-            __HAL_SPI_DISABLE(&spi_to_nfcm1833tinz);
-            lcd_clear_display();
-            HAL_Delay (100);
-            lcd_goto_XY(1,5);
-            lcd_send_string("Conek");  
-            permissReadTag = 1;            
-          }      
-      }
-      else if(permissReadTag == 1)
-      {
-        __HAL_SPI_DISABLE(&spi_to_nfcm1833tinz);
-        if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_3)==0)
-        {
-          viTriTien++;    
-          So_Tien[viTriTien - 1] = 0x30;
-          lcd_clear_display();
-          HAL_Delay (100);
-          lcd_goto_XY(1,5);
-          lcd_send_string("Conek");           
-          lcd_goto_XY(2,4);
-          lcd_send_string(So_Tien);              
-          HAL_Delay(500);
-        }
-        if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_0)==0)
-        {
-          viTriTien++;
-          So_Tien[viTriTien - 1] = 0x31; 
-          lcd_clear_display();
-          HAL_Delay (100);
-          lcd_goto_XY(1,5);
-          lcd_send_string("Conek");                     
-          lcd_goto_XY(2,4);
-          lcd_send_string(So_Tien);          
-          HAL_Delay(500);
-        }        
-        if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_1)==0)
-        {
-          viTriTien++;
-          So_Tien[viTriTien - 1] = 0x32; 
-          lcd_clear_display();
-          HAL_Delay (100);
-          lcd_goto_XY(1,5);
-          lcd_send_string("Conek");                     
-          lcd_goto_XY(2,4);
-          lcd_send_string(So_Tien);          
-          HAL_Delay(500);
-        }        
-        if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_8)==0)
-        {
-          viTriTien++;
-          So_Tien[viTriTien - 1] = 0x33; 
-          lcd_clear_display();
-          HAL_Delay (100);
-          lcd_goto_XY(1,5);
-          lcd_send_string("Conek");                     
-          lcd_goto_XY(2,4);
-          lcd_send_string(So_Tien);          
-          HAL_Delay(500);
-        }        
-        if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_11)==0)
-        {
-          viTriTien++;
-          So_Tien[viTriTien - 1] = 0x34; 
-          lcd_clear_display();
-          HAL_Delay (100);
-          lcd_goto_XY(1,5);
-          lcd_send_string("Conek");                     
-          lcd_goto_XY(2,4);
-          lcd_send_string(So_Tien);          
-          HAL_Delay(500);
-        }        
-        if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_12)==0)
-        {
-          viTriTien++;
-          So_Tien[viTriTien - 1] = 0x35; 
-          lcd_clear_display();
-          HAL_Delay (100);
-          lcd_goto_XY(1,5);
-          lcd_send_string("Conek");                     
-          lcd_goto_XY(2,4);
-          lcd_send_string(So_Tien);          
-          HAL_Delay(500);
-        }        
-        if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_3)==0)
-        {
-          viTriTien++;
-          So_Tien[viTriTien - 1] = 0x36; 
-          lcd_clear_display();
-          HAL_Delay (100);
-          lcd_goto_XY(1,5);
-          lcd_send_string("Conek");                     
-          lcd_goto_XY(2,4);
-          lcd_send_string(So_Tien);          
-          HAL_Delay(500);
-        }        
-        if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_4)==0)
-        {
-          viTriTien++;
-          So_Tien[viTriTien - 1] = 0x37; 
-          lcd_clear_display();
-          HAL_Delay (100);
-          lcd_goto_XY(1,5);
-          lcd_send_string("Conek");                     
-          lcd_goto_XY(2,4);
-          lcd_send_string(So_Tien);          
-          HAL_Delay(500);
-        }        
-        if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_5)==0)
-        {
-          viTriTien++;
-          So_Tien[viTriTien - 1] = 0x38; 
-          lcd_clear_display();
-          HAL_Delay (100);
-          lcd_goto_XY(1,5);
-          lcd_send_string("Conek");                     
-          lcd_goto_XY(2,4);
-          lcd_send_string(So_Tien);          
-          HAL_Delay(500);
-        }        
-        if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_2)==0)
-        {
-          viTriTien++;
-          So_Tien[viTriTien - 1] = 0x39; 
-          lcd_clear_display();
-          HAL_Delay (100);
-          lcd_goto_XY(1,5);
-          lcd_send_string("Conek");                     
-          lcd_goto_XY(2,4);
-          lcd_send_string(So_Tien);          
-          HAL_Delay(500);
-        }        
-      }
-      else if(permissReadTag == 2)
-      {
-          uint8_t url[140] = "AT+HTTPPARA=\"URL\",\"http://testcodeesp8266.000webhostapp.com/receiver.php?UID=";
-          uint8_t url2[140] = "&time=";      
-          uint8_t url3[2] = "\"";
-          
-          //memcpy(url2+6,So_Tien,viTriTien);
-          memcpy(url+77,idTagBCD,16);
-          
-          memcpy(url+93,url2,6);  
-          for(int i = 0; i < viTriTien; i++)
-          {
-              url[i + 100] = So_Tien[i]; 
+              if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_0)==0)
+              {
+                viTriTien++;
+                So_Tien[viTriTien - 1] = 0x31; 
+                LCD_Display(So_Tien);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_1)==0)
+              {
+                viTriTien++;
+                So_Tien[viTriTien - 1] = 0x32; 
+                LCD_Display(So_Tien);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_8)==0)
+              {
+                viTriTien++;
+                So_Tien[viTriTien - 1] = 0x33; 
+                LCD_Display(So_Tien);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_11)==0)
+              {
+                viTriTien++;
+                So_Tien[viTriTien - 1] = 0x34; 
+                LCD_Display(So_Tien);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_12)==0)
+              {
+                viTriTien++;
+                So_Tien[viTriTien - 1] = 0x35; 
+                LCD_Display(So_Tien);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_3)==0)
+              {
+                viTriTien++;
+                So_Tien[viTriTien - 1] = 0x36; 
+                LCD_Display(So_Tien);
+              }
+              if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_4)==0)
+              {
+                viTriTien++;
+                So_Tien[viTriTien - 1] = 0x37; 
+                LCD_Display(So_Tien);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_5)==0)
+              {
+                viTriTien++;
+                So_Tien[viTriTien - 1] = 0x38; 
+                LCD_Display(So_Tien);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_2)==0)
+              {
+                viTriTien++;
+                So_Tien[viTriTien - 1] = 0x39; 
+                LCD_Display(So_Tien);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_0)==0)
+              {
+                permissReadTag = 2;
+              }              
+              break;
+            default:
+              display(url);
+              display(idTagBCD);
+              display("&time=");
+              display(So_Tien);
+              if(Sim_sendCommand("\"","OK",10000))
+              {
+                HAL_Delay(10);
+                if(Sim_sendCommand("AT+HTTPPARA=\"CID\",1","OK",10000))
+                {
+                  HAL_Delay(10);
+                  if(Sim_sendCommand("AT+HTTPACTION=0","OK",10000))
+                  {
+                    if(Sim_Response("200",10000))
+                    {
+                      LCD_Display_Success();                      
+                    }
+                    else
+                    {
+                      LCD_Display_Faild();                        
+                    }
+                  }
+                  else
+                  {
+                    LCD_Display_Faild();
+                  }
+                }
+              }
+              LCD_Dislay_Clear();
+              memset(So_Tien, 0, sizeof(So_Tien));
+              viTriTien = 0;
+              permissReadTag = 0;
+              break;
           }
-          for(int i = 0; i < 2; i++)
-          {
-              url[i + 100 + viTriTien] = So_Tien[i]; 
-          }          
-          //memcpy(url + 100,So_Tien,viTriTien); 
-          //memcpy(url+100 + viTriTien + 1,url3,2);
-          //display(url2);
-          display(url);
-//            if(Sim_sendCommand(url,"OK",5000))
-//            {
-//              HAL_Delay(10);
-//              if(Sim_sendCommand("AT+HTTPACTION=0","OK",5000))
-//              {
-//                if(Sim_Response("200",10000))
-//                {
-//                  lcd_clear_display();
-//                  HAL_Delay (100);
-//                  lcd_goto_XY(1,5);
-//                  lcd_send_string("Conek"); 
-//                  lcd_goto_XY(2,2);
-//                  lcd_send_string("Send Success");
-//                  HAL_Delay(2000);             
-//                }
-//                else
-//                {
-//                  lcd_clear_display();
-//                  HAL_Delay (100);
-//                  lcd_goto_XY(1,5);
-//                  lcd_send_string("Conek"); 
-//                  lcd_goto_XY(2,2);
-//                  lcd_send_string("Send Failed");    
-//                  HAL_Delay (2000);                   
-//                }
-//              }
-//              else
-//              {
-//                  lcd_clear_display();
-//                  HAL_Delay (100);
-//                  lcd_goto_XY(1,5);
-//                  lcd_send_string("Conek"); 
-//                  lcd_goto_XY(2,3);
-//                  lcd_send_string("Send Failed");
-//                  HAL_Delay(2000);                        
-//              }
-//            }      
-//            if(Sim_sendCommand("AT+HTTPREAD","OK",5000))
-//            {
-//                  
-//            }
-//            
-          demFunction = 0;
-          memset(So_Tien, 0, sizeof(So_Tien));
-          viTriTien = 0;
-          lcd_clear_display();
-          HAL_Delay (100);
-          lcd_goto_XY(1,5);
-          lcd_send_string("Conek");                               
-          lcd_goto_XY(2,4);
-          lcd_send_string(So_Tien);  
-          permissReadTag = 0;
-      }
     }
  
 }
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+//void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+//{
+//  if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_0)==1)
+//  {
+//    permissReadTag = 2;
+//  }
+//}
+void LCD_Dislay_Clear()
 {
-  if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_0)==1)
-  {
-    display("");
-    demFunction++;
-    permissReadTag = 2;
-  }
+  lcd_clear_display();
+  HAL_Delay (100);
+  lcd_goto_XY(1,5);
+  lcd_send_string("Conek");  
 }
-void display(void* data)																								
+void LCD_Display(char* str)
+{
+  lcd_clear_display();
+  HAL_Delay (100);
+  lcd_goto_XY(1,5);
+  lcd_send_string("Conek");                     
+  lcd_goto_XY(2,4);
+  lcd_send_string(str);          
+  HAL_Delay(300);  
+}
+void LCD_Display_Success()
+{
+  lcd_clear_display();
+  HAL_Delay (100);
+  lcd_goto_XY(1,5);
+  lcd_send_string("Conek"); 
+  lcd_goto_XY(2,2);
+  lcd_send_string("Send Success");
+  HAL_Delay(1000);  
+}
+void LCD_Display_Faild()
+{
+  lcd_clear_display();
+  HAL_Delay (100);
+  lcd_goto_XY(1,5);
+  lcd_send_string("Conek"); 
+  lcd_goto_XY(2,2);
+  lcd_send_string("Send Failed");
+  HAL_Delay(1000);
+}
+void display(char* data)																								
 {
 	HAL_UART_Transmit(&huart1,(uint8_t *)data,(uint16_t)strlen(data),1000);
 }
@@ -404,7 +387,7 @@ int8_t Sim_sendCommand(char*command ,char*response,uint32_t timeout)
     }
   }
   while(answer == 0);
-  display(Sim_response);
+  //display(Sim_response);
   return answer;
 }
 
@@ -450,17 +433,8 @@ int8_t Sim_Response(char*response,uint32_t timeout)
     }
   }
   while(answer == 0);
-  display(Sim_response);
+  //display(Sim_response);
   return answer;
-}
-void uart_printf(uint8_t *message)
-{
-        for(int i = 0; i < 16; i++)
-	//while(*message != '\0')
-	{
-		HAL_UART_Transmit(&huart1,(uint8_t *)message,1,10);
-		message++;
-	}
 }
 /**
   * @brief System Clock Configuration
@@ -637,14 +611,14 @@ static void MX_GPIO_Init (void)
     __HAL_RCC_GPIOH_CLK_ENABLE();
     
     /*Configure GPIO pin : PA0 */
-    GPIO_InitStruct.Pin = GPIO_PIN_0;
-    GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+//    GPIO_InitStruct.Pin = GPIO_PIN_0;
+//    GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+//    GPIO_InitStruct.Pull = GPIO_NOPULL;
+//    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
     
     /*Configure GPIO pins : PA3 PA8 PA11 PA12 */
-    GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_8|GPIO_PIN_11|GPIO_PIN_12
-                          |GPIO_PIN_15;
+    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_8|GPIO_PIN_11|GPIO_PIN_12
+                          ;
     GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);    
@@ -658,41 +632,11 @@ static void MX_GPIO_Init (void)
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
     
     /* EXTI interrupt init*/
-    HAL_NVIC_SetPriority(EXTI0_IRQn, 0, 0);
-    HAL_NVIC_EnableIRQ(EXTI0_IRQn);
-}
-static void MX_USART2_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART2_Init 0 */
-
-  /* USER CODE END USART2_Init 0 */
-
-  /* USER CODE BEGIN USART2_Init 1 */
-
-  /* USER CODE END USART2_Init 1 */
-  huart2.Instance = USART2;
-  huart2.Init.BaudRate = 9600;
-  huart2.Init.WordLength = UART_WORDLENGTH_8B;
-  huart2.Init.StopBits = UART_STOPBITS_1;
-  huart2.Init.Parity = UART_PARITY_NONE;
-  huart2.Init.Mode = UART_MODE_TX_RX;
-  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
-  huart2.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
-  huart2.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
-  if (HAL_UART_Init(&huart2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART2_Init 2 */
-
-  /* USER CODE END USART2_Init 2 */
-
+//    HAL_NVIC_SetPriority(EXTI0_IRQn, 0, 0);
+//    HAL_NVIC_EnableIRQ(EXTI0_IRQn);
 }
 static void MX_USART1_UART_Init(void)
 {
-
   /* USER CODE BEGIN USART1_Init 0 */
 
   /* USER CODE END USART1_Init 0 */
