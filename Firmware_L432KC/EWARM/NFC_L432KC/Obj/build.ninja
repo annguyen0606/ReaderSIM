@@ -26,7 +26,10 @@ build ndef.pbi : index ndef.xcl
 build nfcm1833_module.pbi : index nfcm1833_module.xcl
 build nfcm1833tiny.pbi : index nfcm1833tiny.xcl
 build nfcm1833tinz.pbi : index nfcm1833tinz.xcl
+build Config.pbi : index Config.xcl
+build Fonts.pbi : index Fonts.xcl
 build main.pbi : index main.xcl
+build SSD1306.pbi : index SSD1306.xcl
 build stm32l4xx_hal_msp.pbi : index stm32l4xx_hal_msp.xcl
 build stm32l4xx_it.pbi : index stm32l4xx_it.xcl
 build usbd_conf.pbi : index usbd_conf.xcl
@@ -65,13 +68,13 @@ build usbd_hid_keyboard.pbi : index usbd_hid_keyboard.xcl
 build usbd_core.pbi : index usbd_core.xcl
 build usbd_ctlreq.pbi : index usbd_ctlreq.xcl
 build usbd_ioreq.pbi : index usbd_ioreq.xcl
-build NFC_L432KC_part0.pbi : link bcdencode.pbi i2c-lcd.pbi ndef.pbi nfcm1833_module.pbi nfcm1833tiny.pbi nfcm1833tinz.pbi main.pbi
-build NFC_L432KC_part1.pbi : link stm32l4xx_hal_msp.pbi stm32l4xx_it.pbi usbd_conf.pbi usbd_desc.pbi system_stm32l4xx.pbi stm32l4xx_hal.pbi stm32l4xx_hal_cortex.pbi
-build NFC_L432KC_part2.pbi : link stm32l4xx_hal_crc.pbi stm32l4xx_hal_crc_ex.pbi stm32l4xx_hal_dma.pbi stm32l4xx_hal_dma_ex.pbi stm32l4xx_hal_exti.pbi stm32l4xx_hal_flash.pbi stm32l4xx_hal_flash_ex.pbi
-build NFC_L432KC_part3.pbi : link stm32l4xx_hal_flash_ramfunc.pbi stm32l4xx_hal_gpio.pbi stm32l4xx_hal_i2c.pbi stm32l4xx_hal_i2c_ex.pbi stm32l4xx_hal_pcd.pbi stm32l4xx_hal_pcd_ex.pbi stm32l4xx_hal_pwr.pbi
-build NFC_L432KC_part4.pbi : link stm32l4xx_hal_pwr_ex.pbi stm32l4xx_hal_rcc.pbi stm32l4xx_hal_rcc_ex.pbi stm32l4xx_hal_spi.pbi stm32l4xx_hal_spi_ex.pbi stm32l4xx_hal_tim.pbi stm32l4xx_hal_tim_ex.pbi
-build NFC_L432KC_part5.pbi : link stm32l4xx_hal_uart.pbi stm32l4xx_hal_uart_ex.pbi stm32l4xx_ll_usb.pbi usbd_cdc.pbi usbd_cdc_vcp.pbi usbd_hid.pbi usbd_hid_keyboard.pbi
-build NFC_L432KC_part6.pbi : link usbd_core.pbi usbd_ctlreq.pbi usbd_ioreq.pbi
+build NFC_L432KC_part0.pbi : link bcdencode.pbi i2c-lcd.pbi ndef.pbi nfcm1833_module.pbi nfcm1833tiny.pbi nfcm1833tinz.pbi Config.pbi
+build NFC_L432KC_part1.pbi : link Fonts.pbi main.pbi SSD1306.pbi stm32l4xx_hal_msp.pbi stm32l4xx_it.pbi usbd_conf.pbi usbd_desc.pbi
+build NFC_L432KC_part2.pbi : link system_stm32l4xx.pbi stm32l4xx_hal.pbi stm32l4xx_hal_cortex.pbi stm32l4xx_hal_crc.pbi stm32l4xx_hal_crc_ex.pbi stm32l4xx_hal_dma.pbi stm32l4xx_hal_dma_ex.pbi
+build NFC_L432KC_part3.pbi : link stm32l4xx_hal_exti.pbi stm32l4xx_hal_flash.pbi stm32l4xx_hal_flash_ex.pbi stm32l4xx_hal_flash_ramfunc.pbi stm32l4xx_hal_gpio.pbi stm32l4xx_hal_i2c.pbi stm32l4xx_hal_i2c_ex.pbi
+build NFC_L432KC_part4.pbi : link stm32l4xx_hal_pcd.pbi stm32l4xx_hal_pcd_ex.pbi stm32l4xx_hal_pwr.pbi stm32l4xx_hal_pwr_ex.pbi stm32l4xx_hal_rcc.pbi stm32l4xx_hal_rcc_ex.pbi stm32l4xx_hal_spi.pbi
+build NFC_L432KC_part5.pbi : link stm32l4xx_hal_spi_ex.pbi stm32l4xx_hal_tim.pbi stm32l4xx_hal_tim_ex.pbi stm32l4xx_hal_uart.pbi stm32l4xx_hal_uart_ex.pbi stm32l4xx_ll_usb.pbi usbd_cdc.pbi
+build NFC_L432KC_part6.pbi : link usbd_cdc_vcp.pbi usbd_hid.pbi usbd_hid_keyboard.pbi usbd_core.pbi usbd_ctlreq.pbi usbd_ioreq.pbi
 build NFC_L432KC.pbd : link NFC_L432KC_part0.pbi NFC_L432KC_part1.pbi NFC_L432KC_part2.pbi NFC_L432KC_part3.pbi NFC_L432KC_part4.pbi NFC_L432KC_part5.pbi NFC_L432KC_part6.pbi
 build NFC_L432KC.pbw : browsedata NFC_L432KC.pbd
 

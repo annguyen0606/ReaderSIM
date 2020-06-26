@@ -40,6 +40,8 @@ int8_t Sim_Response(char*response,uint32_t timeout);
 uint8_t permissReadTag = 0;
 uint8_t So_Tien_Pay[16];
 uint8_t viTriTien = 0;
+uint8_t So_Bill[16];
+uint8_t viTriBill = 0;
 
 void LCD_Display_Faild();
 void LCD_Display_Success();
@@ -47,7 +49,7 @@ void LCD_Dislay_Clear();
 void LCD_Display(char* str);
 int main (void)
 {
-    uint8_t count = 0;
+ uint8_t count = 0;
     HAL_Init();
     SystemClock_Config();
     
@@ -135,11 +137,107 @@ int main (void)
                 lcd_clear_display();
                 HAL_Delay (100);
                 lcd_goto_XY(1,3);
-                lcd_send_string("Nhap Tien:");        
+                lcd_send_string("Nhap Bill:");        
                 permissReadTag = 1;  
               }            
               break;
             case 1:
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_3)==0)
+              {
+                HAL_Delay(100);
+                viTriBill++;    
+                So_Bill[viTriBill - 1] = 0x30;
+                LCD_Display((char *)So_Bill);
+                
+              }
+              if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_0)==0)
+              {
+                HAL_Delay(100);
+                viTriBill++;
+                So_Bill[viTriBill - 1] = 0x31; 
+                LCD_Display((char *)So_Bill);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_1)==0)
+              {
+                HAL_Delay(100);
+                viTriBill++;
+                So_Bill[viTriBill - 1] = 0x32; 
+                LCD_Display((char *)So_Bill);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_8)==0)
+              {
+                HAL_Delay(100);
+                viTriBill++;
+                So_Bill[viTriBill - 1] = 0x33; 
+                LCD_Display((char *)So_Bill);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_11)==0)
+              {
+                HAL_Delay(100);
+                viTriBill++;
+                So_Bill[viTriBill - 1] = 0x34; 
+                LCD_Display((char *)So_Bill);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_12)==0)
+              {
+                HAL_Delay(100);
+                viTriBill++;
+                So_Bill[viTriBill - 1] = 0x35; 
+                LCD_Display((char *)So_Bill);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_3)==0)
+              {
+                HAL_Delay(100);
+                viTriBill++;
+                So_Bill[viTriBill - 1] = 0x36; 
+                LCD_Display((char *)So_Bill);
+              }
+              if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_4)==0)
+              {
+                HAL_Delay(100);
+                viTriBill++;
+                So_Bill[viTriBill - 1] = 0x37; 
+                LCD_Display((char *)So_Bill);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_5)==0)
+              {
+                HAL_Delay(100);
+                viTriBill++;
+                So_Bill[viTriBill - 1] = 0x38; 
+                LCD_Display((char *)So_Bill);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_2)==0)
+              {
+                HAL_Delay(100);
+                viTriBill++;
+                So_Bill[viTriBill - 1] = 0x39; 
+                LCD_Display((char *)So_Bill);
+              }        
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_0)==0)
+              {
+                permissReadTag = 2;
+                HAL_Delay(200);
+                lcd_clear_display();
+                HAL_Delay (100);
+                lcd_goto_XY(1,5);
+                lcd_send_string("Conek");    
+                HAL_Delay (100);
+                lcd_goto_XY(1,3);
+                lcd_send_string("Nhap Tien:");                                
+              }                   
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_1)==0)
+              {
+                So_Bill[viTriBill - 1] = 0;
+                if(viTriBill > 0){
+                  viTriBill--;
+                }else{
+                  viTriBill = 0;
+                }
+                LCD_Display((char *)So_Bill);
+                HAL_Delay(300);
+              }                       
+              break;              
+            case 2:
               if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_3)==0)
               {
                 HAL_Delay(100);
@@ -213,26 +311,53 @@ int main (void)
               }        
               if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_0)==0)
               {
-                permissReadTag = 2;
+                permissReadTag = 3;
                 HAL_Delay(200);
-              }              
+              }                   
+              if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_1)==0)
+              {
+                So_Tien_Pay[viTriTien - 1] = 0;
+                if(viTriTien > 0){
+                  viTriTien--;
+                }else{
+                  viTriTien = 0;
+                }
+                LCD_Display((char *)So_Tien_Pay);
+                HAL_Delay(300);
+              }                       
               break;
-            default :
+          default:
               LCD_Dislay_Clear();
               HAL_Delay(100);
               lcd_goto_XY(1,5);
               lcd_send_string("Conek");                    
               lcd_goto_XY(2,3);
-              lcd_send_string("Sending...");                
+              lcd_send_string("Sending...");     
+              if(Sim_sendCommand("AT+SAPBR=1,1","ERROR",10000)){
+                HAL_Delay(10);
+              }else{
+                if(Sim_sendCommand("AT+SAPBR=0,1","OK",10000)){
+                  HAL_Delay(10);
+                  if(Sim_sendCommand("AT+SAPBR=1,1","OK",10000)){
+                    HAL_Delay(10);
+                    if(Sim_sendCommand("AT+HTTPINIT","ERROR",10000))
+                    {
+                      HAL_Delay(10);
+                    }
+                  }
+                }
+              }               
               display((char *)url);
               for(uint8_t abc = 0; abc < 16; abc++){
                 HAL_UART_Transmit(&huart1,&idTagBCD[abc],1,1000);
               }
               //display((char *)idTagBCD[1]);
               //display((char *)idTagBCD[2]);
-              display("&time=");
+              display("&bill=");
+              display((char*)So_Bill);
+              display("&money=");
               display((char *)So_Tien_Pay);
-                permissReadTag = 0;
+              permissReadTag = 0;
                 if(Sim_sendCommand("\"","OK",10000))
                 {
                   HAL_Delay(10);
@@ -260,14 +385,16 @@ int main (void)
                     }
                   }
                 }
-                HAL_Delay(100);
+              HAL_Delay(100);
               LCD_Dislay_Clear();
               HAL_Delay(100);
-              for(uint8_t abc = 0; abc < 20; abc++){
+              for(uint8_t abc = 0; abc < 16; abc++){
                 So_Tien_Pay[abc] = 0;
+                So_Bill[abc] = 0;
                 idTagBCD[abc] = 0;
               }
               viTriTien = 0;
+              viTriBill = 0;
               break;
           }
     }
@@ -603,7 +730,7 @@ static void MX_GPIO_Init (void)
 //    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
     
     /*Configure GPIO pins : PA3 PA8 PA11 PA12 */
-    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_8|GPIO_PIN_11|GPIO_PIN_12
+    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_8|GPIO_PIN_11|GPIO_PIN_12
                           ;
     GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
